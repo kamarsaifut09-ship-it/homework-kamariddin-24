@@ -1,0 +1,34 @@
+{
+  "basePrice": 100000,
+  "model": "BMW X6 M Competition",
+  "exteriorColors": [
+    {
+      "id": "grey",
+      "name": "Brooklyn Grey Metallic",
+      "price": 0,
+      "hex": "#9EA2A6",
+      "description": "Timeless grey with a metallic shine."
+    },
+    {
+      "id": "blue",
+      "name": "Marina Bay Blue Metallic",
+      "price": 1500,
+      "hex": "#1B3A6B",
+      "description": "Brilliant, vibrant colors with a metallic shine."
+    },
+    {
+      "id": "green",
+      "name": "Isle of Man Green Metallic",
+      "price": 2500,
+      "hex": "#0E5C46",
+      "description": "Deep racing green with a metallic shine."
+    }
+  ],
+  "interiorOptions": [
+    { "id": 1, "name": "Black Merino Leather", "price": 0, "hex": "#1A1A1A" },
+    { "id": 2, "name": "Red Merino Leather", "price": 800, "hex": "#6B4A2F" },
+    { "id": 3, "name": "Orange Merino Leather", "price": 1200, "hex": "#E5DCC9" },
+    { "id": 4, "name": "White Merino Leather", "price": 1800, "hex": "#8B1E1E" },
+    { "id": 5, "name": "Silverstone/Black Merino Leather", "price": 2500, "hex": "#C8CBCE" }
+  ]
+}

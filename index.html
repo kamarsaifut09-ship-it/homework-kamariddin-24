@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW X6 M Competition Configurator</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="model-block">
+      <button class="back-button" type="button" aria-label="Back">←</button>
+      <div>
+        <div class="model-name" id="model-name">BMW X6 M Competition</div>
+        <div class="subline">Standard features</div>
+      </div>
+    </div>
+
+    <nav class="tabs" aria-label="Configurator tabs">
+      <button class="tab active" data-tab="exterior" type="button">Exterior</button>
+      <button class="tab" data-tab="interior" type="button">Interior</button>
+    </nav>
+
+    <div class="header-price">
+      <span>MSRP as built</span>
+      <strong class="price-value">$100,000</strong>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="visual-area">
+      <div class="viewer-shell" id="car-viewer">
+        <img class="main-image" id="main-image" src="./images/exterior/blue/1.png" alt="BMW X6 M Competition">
+        <div class="frame-indicator" id="frame-indicator">1 / 6</div>
+      </div>
+      <div class="caption">
+        <div class="caption-title" id="caption-title">Marina Bay Blue Metallic</div>
+        <p id="caption-description">Brilliant, vibrant colors with a metallic shine.</p>
+      </div>
+    </section>
+
+    <aside class="control-panel">
+      <div class="panel-heading" id="panel-heading">Color</div>
+      <div class="panel-content" id="options-list"></div>
+
+      <div class="panel-footer">
+        <button class="action secondary" id="quote-button" type="button">
+          <span>Get Your Quote</span><span>›</span>
+        </button>
+        <button class="action primary" id="next-button" type="button">
+          <span>Next: Interior</span><span>›</span>
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <div class="quote-dialog" id="quote-dialog" hidden>
+    <div class="dialog-backdrop" id="dialog-backdrop"></div>
+    <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button>
+      <h2 id="quote-title">Your configuration</h2>
+      <div id="quote-content"></div>
+    </section>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
